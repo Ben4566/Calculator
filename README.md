@@ -17,7 +17,7 @@ The project aims to replicate the core functionalities of the TI-30X Plus calcul
 - **Basic Arithmetic:** Addition, subtraction, multiplication, and division.
 - **Advanced Math Functions:** Trigonometry, logarithms, exponentiation, and more.
 - **Statistical Operations:** Mean, variance, standard deviation, and other statistical computations.
-- **Memory Functions:** Store and recall values.
+- **Input for multiple Values and Operators** For more complex calculations.
 - **Error Handling:** Graceful handling of invalid inputs and mathematical errors (e.g., division by zero).
 
 ---
