@@ -2,7 +2,8 @@ package Calculator;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class OperatorTest {
 
@@ -45,10 +46,17 @@ class OperatorTest {
     }
 
     @Test
-    void testRootWithN() {
-        double result = Operator.applyBinary("n^√", 27, 3);
-        assertEquals(3, result, "Cube root of 27 should equal 3");
+    void testExponentiationWithZero() {
+        double result = Operator.applyBinary("X^n", 2, 0);
+        assertEquals(1, result, "2^0 should equal 1");
     }
+
+    @Test
+    void testExponentiationWithNegative() {
+        double result = Operator.applyBinary("X^n", 2, -1);
+        assertEquals(0.5, result, "2^-1 should equal 0.5");
+    }
+
 
     @Test
     void testSquaring() {
@@ -56,10 +64,17 @@ class OperatorTest {
         assertEquals(25, result, "5^2 should equal 25");
     }
 
+
     @Test
     void testSquareRoot() {
         double result = Operator.applyUnary("√", 16);
         assertEquals(4, result, "Square root of 16 should equal 4");
+    }
+
+    @Test
+    void testRootWithN() {
+        double result = Operator.applyBinary("n^√", 27, 3);
+        assertEquals(3, result, "Cube root of 27 should equal 3");
     }
 
     @Test
@@ -72,6 +87,12 @@ class OperatorTest {
 
     @Test
     void testFactorial() {
+        double result = Operator.applyUnary("!", 5);
+        assertEquals(120, result, "5! should equal 120");
+    }
+
+    @Test
+    void testFactorialOfZero() {
         double result = Operator.applyUnary("!", 5);
         assertEquals(120, result, "5! should equal 120");
     }
