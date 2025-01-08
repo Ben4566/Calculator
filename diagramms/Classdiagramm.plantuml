@@ -1,0 +1,69 @@
+@startuml Calculator
+package Calculator {
+
+    class GUI {
+        - JFrame frame
+        - JTextField textField
+        - Logic Logic
+        - boolean isOperatorClicked
+
+        -- Konstruktor --
+        + GUI()
+
+        -- Methoden --
+        + static void main(String[] args)
+    }
+
+    -class ButtonClickListener {
+        + actionPerformed(ActionEvent e)
+    }
+
+
+    class Input {
+        -isValidInput(String input)
+
+    }
+
+    class Logic {
+
+        +calculate(String expression)
+
+
+    }
+
+
+
+
+    class Operator {
+        - Map<String, BiFunction<Double, Double, Double>> BINARY_OPERATORS
+        - Map<String, Function<Double, Double>> UNARY_OPERATORS
+
+        {static} + boolean isBinaryOperator(String operator)
+        {static} + boolean isUnaryOperator(String operator)
+
+        {static} + double applyBinary(String operator, double a, double b)
+        {static} + double applyUnary(String operator, double a)
+
+        - static double add(double a, double b)
+        - static double subtract(double a, double b)
+        - static double multiply(double a, double b)
+        - static double divide(double a, double b)
+        - static double exponentiation(double a, double b)
+        - static double rootWithN(double a, double b)
+
+        - static double squaring(double a)
+        - static double squareRoot(double a)
+        - static double factorial(double a)
+        - static double sinus(double a)
+        - static double cosine(double a)
+        - static double tangent(double a)
+    }
+}
+
+GUI  -->  ButtonClickListener
+ButtonClickListener -->  Input: "Input from User"
+Input  --  Logic: "Caclulates the Input"
+Logic  -->  Operator: "Uses the Operator-Methods"
+Logic  -->  GUI: "Output to GUI"
+
+@enduml
