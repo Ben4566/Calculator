@@ -85,7 +85,7 @@ public class Operator {
         return Math.tan(Math.toRadians(a));
     }
 
-    // Access methods for calculator
+
     public static boolean isBinaryOperator(String operator) {
         return BINARY_OPERATORS.containsKey(operator);
     }
@@ -93,7 +93,7 @@ public class Operator {
     public static boolean isUnaryOperator(String operator) {
         return UNARY_OPERATORS.containsKey(operator);
     }
-
+    // Access methods for calculator
     public static double applyBinary(String operator, double a, double b) {
         if (!isBinaryOperator(operator)) {
             throw new IllegalArgumentException("Unknown binary operator: " + operator);
