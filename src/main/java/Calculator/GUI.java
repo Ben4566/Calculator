@@ -38,7 +38,7 @@ public class GUI {
                 "1", "2", "3", "-",
                 "0", ".", "=", "+",
                 "X^2", "X^n", "√", "n^√",
-                "π", "ℇ", "!", "n/n",
+                "π", "Euler", "!", "n/n",
                 "sin", "tan", "cos", "ln"
         };
 
@@ -63,28 +63,7 @@ public class GUI {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            String command = e.getActionCommand();
 
-            if ("0123456789.".contains(command)) {
-                if (isOperatorClicked) {
-                    textField.setText("");
-                    isOperatorClicked = false;
-                }
-                textField.setText(textField.getText() + command);
-            } else if ("/*-+".contains(command)) {
-                Logic.setNumber(Double.parseDouble(textField.getText()));
-                Logic.setOperator(command);
-                isOperatorClicked = true;
-            } else if ("=".equals(command)) {
-                try {
-                    Logic.setNumber(Double.parseDouble(textField.getText()));
-                    double result = Logic.calculate();
-                    textField.setText(String.valueOf(result));
-                } catch (ArithmeticException ex) {
-                    JOptionPane.showMessageDialog(frame, ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-                }
-                isOperatorClicked = true;
-            }
         }
     }
 }
