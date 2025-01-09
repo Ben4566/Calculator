@@ -1,23 +1,23 @@
-# Calculator Project: Recreating the TI-30X Plus
+# Calculator Project: Building a Scientific Calculator
 
-Welcome to my Calculator Project! This repository contains the source code and documentation for my attempt to recreate the functionality of the TI-30X Plus calculator. This project serves as both a learning experience and a fun challenge to develop a feature-rich scientific calculator.
+Welcome to my Calculator Project! This repository contains the source code and documentation for my attempt to develop a feature-rich scientific calculator. This project serves as both a learning experience and a practical application of the knowledge I have acquired during my studies in planning, modeling, testing, and programming.
 
 ---
 
 ## What is the Project?
 
-The goal of this project is to build a software-based scientific calculator that emulates the functionality of the TI-30X Plus. The calculator will support a wide range of mathematical and statistical operations, with a focus on accuracy and usability. It is designed to run as a command-line application, with with a graphical user interface.
+The goal of this project is to build a software-based scientific calculator that supports a wide range of mathematical and statistical operations. The focus is on accuracy, usability, and reliability. The application is designed to run as a command-line application with an optional graphical user interface (GUI).
 
 ---
 
 ## Features
 
-The project aims to replicate the core functionalities of the TI-30X Plus calculator, including:
+The project aims to include the following functionalities:
 
 - **Basic Arithmetic:** Addition, subtraction, multiplication, and division.
 - **Advanced Math Functions:** Trigonometry, logarithms, exponentiation, and more.
 - **Statistical Operations:** Mean, variance, standard deviation, and other statistical computations.
-- **Input for multiple Values and Operators** For more complex calculations.
+- **Input for Multiple Values and Operators:** Supporting complex calculations.
 - **Error Handling:** Graceful handling of invalid inputs and mathematical errors (e.g., division by zero).
 
 ---
@@ -31,8 +31,6 @@ The MVP for this project includes:
 - Implementation of at least three advanced math functions (e.g., sine, logarithm, exponentiation).
 - Basic error handling for invalid inputs and mathematical errors.
 
-
-
 ---
 
 ## Nice to Haves
@@ -41,29 +39,8 @@ Beyond the MVP, the following features would enhance the project:
 
 - Additional statistical and scientific functions.
 - Memory functions for storing and recalling multiple values.
-- Table-function of the TI-30X Plus.
+- Advanced visualization features, such as graphing capabilities.
 - A mobile app or web-based version of the calculator.
-
----
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/calculator-project.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd calculator-project
-   ```
-3. Compile the source code:
-   ```bash
-   javac src/*.java -d out
-   ```
-4. Run the program:
-   ```bash
-   java -cp out Main
-   ```
 
 ---
 
@@ -71,10 +48,8 @@ Beyond the MVP, the following features would enhance the project:
 
 Future improvements and features include:
 
-- Graphical User Interface (GUI) for easier usability.
 - Expanded statistical and scientific functions.
-- Localization and support for multiple languages.
-- Mobile app or web-based version.
+- Development of a mobile app or web-based version of the calculator.
 
 ---
 
@@ -86,7 +61,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-- **Texas Instruments** for inspiring this project with their TI-30X Plus calculator.
 - Online programming communities and resources for guidance and learning.
 
 ---
@@ -95,6 +69,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 If you have questions or feedback, feel free to reach out:
 
-- **Email:** [benedikt.lang@example.com](mailto\:benedikt.lang@example.com)
 - **GitHub:** [@your-username](https://github.com/your-username)
 
