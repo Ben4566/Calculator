@@ -16,7 +16,6 @@ The project aims to include the following functionalities:
 
 - **Basic Arithmetic:** Addition, subtraction, multiplication, and division.
 - **Advanced Math Functions:** Trigonometry, logarithms, exponentiation, and more.
-- **Statistical Operations:** Mean, variance, standard deviation, and other statistical computations.
 - **Input for Multiple Values and Operators:** Supporting complex calculations.
 - **Error Handling:** Graceful handling of invalid inputs and mathematical errors (e.g., division by zero).
 
