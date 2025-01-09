@@ -6,7 +6,7 @@ Welcome to my Calculator Project! This repository contains the source code and d
 
 ## What is the Project?
 
-The goal of this project is to build a software-based scientific calculator that supports a wide range of mathematical and statistical operations. The focus is on accuracy, usability, and reliability. The application is designed to run as a command-line application with an optional graphical user interface (GUI).
+The goal of this project is to build a software-based scientific calculator that supports a wide range of mathematical and statistical operations. The focus is on accuracy, usability, and reliability. The application is designed to run with a graphical user interface (GUI).
 
 ---
 
